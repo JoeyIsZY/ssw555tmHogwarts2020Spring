@@ -2,10 +2,18 @@
 SSW555
 Team: Hogwarts
 AUthor: yzhou，Fangji Liang
+edited by Haodong Wu at 15/02/2020:
+1. close the file
+2. change the default value for self.alive from NA to True
+3. restore the value of date.item after every use, or it affects other individual data
+4. add new feature (us01) that checks Dates (birth, marriage, divorce, death) are not be after the current date
+5. add new feature (us07) that insure age is smaller than 150.
 '''
 
 import datetime
 from prettytable import PrettyTable
+from us01 import current_date_check
+from us07 import not_olderthan150
 
 
 class Individual:
@@ -21,10 +29,13 @@ class Individual:
                      'NAME': {'line': int(), 'detail': 'NA'}, 'SEX': {'line': int(), 'detail': 'NA'},
                      'FAMC': {'line': int(), 'detail': 'NA'}, 'FAMS': {'line': int(), 'detail': 'NA'}}
         self.id_line = int()
-        self.alive = 'NA'
+        self.alive = True
+        #because if a person is alive, there is no any line can swith the self.alive from 'NA' to False, I changed it 
+        #The original value by yzhou is 'NA', changed by Haodong Wu during sprint1  at 15/02/2020
         self.age = 'NA'
 
     def set_id_line(self, id_line):
+        #print(self.repo['NAME']['detail'])
         self.id_line = id_line
 
     def set_alive(self, alive):
@@ -137,13 +148,21 @@ class Repository:
                             self.individuals[indi_id].set_alive(False)
                         self.individuals[indi_id].repo[date_item]['line'] = index
                         self.individuals[indi_id].repo[date_item]['detail'] = ' '.join(word[2:])
+                        date_item = 'NA'
+                        #the original code doesn't have this line code, So after each use, the date_item is still there. 
+                        # But coincidently every individual last level2 data is death 
+                        # So this error will not occur until one individual still alive
+                        # It took me two hours to find out the bug (ToT)
                     elif date_item in fam_date:
                         self.families[fam_id].repo[date_item]['line'] = index
                         self.families[fam_id].repo[date_item]['detail'] = ' '.join(word[2:])
+                        date_item = 'NA'
                     else:
                         pass
                 else:
                     pass
+            fp.close()
+            #should close the file
 
     def update_individuals(self):
         for indi in self.individuals.values():
@@ -178,7 +197,8 @@ def main():
     test.update_families()
     test.table_individual()
     test.table_family()
-
+    current_date_check(test)
+    not_olderthan150(test)
 
 if __name__ == '__main__':
     main()
