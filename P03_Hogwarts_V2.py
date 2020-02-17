@@ -2,7 +2,6 @@
 SSW555
 Team: Hogwarts
 AUthor: yzhou，Fangji Liang
-
 edited by Haodong Wu at 15/02/2020:
 1. close the file
 2. change the default value for self.alive from NA to True
@@ -15,6 +14,7 @@ import datetime
 from prettytable import PrettyTable
 from us01 import current_date_check
 from us07 import not_olderthan150
+
 
 class Individual:
     """ This is the class to store the information of each person. """
@@ -199,5 +199,6 @@ def main():
     test.table_family()
     current_date_check(test)
     not_olderthan150(test)
+
 if __name__ == '__main__':
     main()
