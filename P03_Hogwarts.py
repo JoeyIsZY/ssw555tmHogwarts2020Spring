@@ -4,10 +4,14 @@ Team: Hogwarts
 AUthor: yzhou，Fangji Liang
 '''
 
+
 from datetime import datetime
 from prettytable import PrettyTable
 
-
+'''
+change_date_2020_2_11: change origin code from yz
+change_date_2020_2_18: all date will store by datetime type in repository(Individual, Family)
+'''
 class Individual:
     """ This is the class to store the information of each person. """
     # __slots__ = {'ID', 'Name', 'Gender', 'Birthday', 'Age',
@@ -135,10 +139,12 @@ class Repository:
                         if date_item == 'DEAT':
                             self.individuals[indi_id].set_alive(False)
                         self.individuals[indi_id].repo[date_item]['line'] = index
+                        #individual keywords with date stores by datetime types
                         self.individuals[indi_id].repo[date_item]['detail'] = datetime.strptime(' '.join(word[2:]), '%d %b %Y')
                         date_item = 'NA'
                     elif date_item in fam_date:
                         self.families[fam_id].repo[date_item]['line'] = index
+                        #families keywords with date stores by datetime type
                         self.families[fam_id].repo[date_item]['detail'] = datetime.strptime(' '.join(word[2:]), '%d %b %Y')
                         date_item = 'NA'
                     else:
