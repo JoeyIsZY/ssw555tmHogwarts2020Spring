@@ -4,7 +4,7 @@ Team: Hogwarts
 AUthor: yzhou，Fangji Liang
 '''
 
-
+import os
 from datetime import datetime
 from prettytable import PrettyTable
 from us01 import current_date_check
@@ -14,6 +14,7 @@ from us07 import not_olderthan150
 change_date_2020_2_11: change origin code from yz, Fangji Liang
 change_date_2020_2_17: 1.use fp.close() 2.reset dateitem's value 3.default: self.alive = True 4. add us01 5.add us07, Haodong Wu
 change_date_2020_2_18: all date will store by datetime type in repository(Individual, Family), Fangji Liang
+changd_date_2020_2_18: add new function errors_print to collect and print all errors, Haodong Wu
 '''
 class Individual:
     """ This is the class to store the information of each person. """
@@ -84,11 +85,11 @@ class Repository:
         self.individuals = dict()
         self.families = dict()
 
-    def get_file_reader(self):
+    def get_file_reader(self, path):
         try:
-            fp = open('proj03_testfile_hogwarts.ged', 'r')
+            fp = open(os.path.join(path, '555prj_Hogwarts_testfile.ged'), 'r')
         except FileNotFoundError:
-            print(f'File cannot be opened.')
+            raise FileNotFoundError(f'File cannot be opened.')
         else:
             indi_date = ['BIRT', 'DEAT']
             indi_no_date = ['NAME', 'SEX', 'FAMC', 'FAMS']
@@ -178,17 +179,39 @@ class Repository:
             pt.add_row(self.families[fam_id].pt_row())
         print(pt)
 
+def errors_print(repository1):
+    """This function is used to collect and print all error messages.
+        Please make sure your us function return a list made of tuples.
+        The format of the tuple should be ((ERROR or ANOMALY), object type, USID, line(just select the most important line),
+         object id, error message(use your own language to describe the error. You also could learn from the TeamXXReport.xlsx))
+         Written by Haodong Wu      02/18/2020"""
+
+    errors_list = []
+    errors_list += current_date_check(repository1)
+    #us01 in Sprint1 by Haodong Wu     02/18/2020
+    errors_list += not_olderthan150(repository1)
+    #us07 in Sprint1 by Haodong Wu     02/18/2020
+    #add your own us return to the error_list
+
+    pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
+    pt = PrettyTable(field_names=pt_labels)
+
+    for index, (error_type, data_type, userstory_number, line, error_id, error_message ) in enumerate(errors_list, start = 1):
+        pt.add_row((index, error_type, data_type, userstory_number, line, error_id, error_message))
+
+    print(pt)
+    
 
 def main():
+    path = os.getcwd()
+    #Get Current Working Directory. If this not work for your pc, please hardcode the absolute path for you.
     test = Repository()
-    test.get_file_reader()
+    test.get_file_reader(path)
     test.update_individuals()
     test.update_families()
     test.table_individual()
     test.table_family()
-    current_date_check(test)
-    not_olderthan150(test)
-
+    errors_print(test)
 
 if __name__ == '__main__':
     main()
