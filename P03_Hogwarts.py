@@ -7,15 +7,16 @@ AUthor: yzhou，Fangji Liang
 
 from datetime import datetime
 from prettytable import PrettyTable
+from us01 import current_date_check
+from us07 import not_olderthan150
 
 '''
-change_date_2020_2_11: change origin code from yz
-change_date_2020_2_18: all date will store by datetime type in repository(Individual, Family)
+change_date_2020_2_11: change origin code from yz, Fangji Liang
+change_date_2020_2_17: 1.use fp.close() 2.reset dateitem's value 3.default: self.alive = True 4. add us01 5.add us07, Haodong Wu
+change_date_2020_2_18: all date will store by datetime type in repository(Individual, Family), Fangji Liang
 '''
 class Individual:
     """ This is the class to store the information of each person. """
-    # __slots__ = {'ID', 'Name', 'Gender', 'Birthday', 'Age',
-    #              'Alive', 'Death', 'Child', 'Spouse'}
     pt_labels = ['ID', 'Name', 'Gender', 'Birthday', 'Age', 'Alive', 'Death', 'Child', 'Spouse']
 
     def __init__(self, indi_id):
@@ -25,7 +26,7 @@ class Individual:
                      'NAME': {'line': int(), 'detail': 'NA'}, 'SEX': {'line': int(), 'detail': 'NA'},
                      'FAMC': {'line': int(), 'detail': 'NA'}, 'FAMS': {'line': int(), 'detail': 'NA'}}
         self.id_line = int()
-        self.alive = 'NA'
+        self.alive = True
         self.age = 'NA'
 
     def set_id_line(self, id_line):
@@ -52,8 +53,6 @@ class Individual:
 
 class Family:
     """ This is the class to store the information of each family. """
-    # __slots__ = {'ID', 'Married', 'Divorced', 'Husband_ID', 'Husband_Name',
-    #              'Wife_ID', 'Wife_Name', 'Children'}
     pt_labels = ['ID', 'Married', 'Divorced', 'Husband ID', 'Husband Name', 'Wife ID', 'Wife Name', 'Children']
 
     def __init__(self, fam_id):
@@ -98,7 +97,8 @@ class Repository:
             indi_id = ''
             fam_id = ''
             date_item = ''
-
+        
+        with fp:
             for index, line in enumerate(fp, 1):
                 word = line.strip().split()
                 if word[0] == '0':
@@ -151,6 +151,7 @@ class Repository:
                         pass
                 else:
                     pass
+        fp.close()
 
     def update_individuals(self):
         for indi in self.individuals.values():
@@ -185,6 +186,8 @@ def main():
     test.update_families()
     test.table_individual()
     test.table_family()
+    current_date_check(test)
+    not_olderthan150(test)
 
 
 if __name__ == '__main__':
