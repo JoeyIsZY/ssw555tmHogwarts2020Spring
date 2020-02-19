@@ -37,7 +37,7 @@ def current_date_check(repo1):
             if datetime.datetime.now() < date_divorce:
                 error_message = 'Divorce date ' + str(date_divorce.strftime("%Y-%m-%d")) + ' occurs in the future.'
                 error.append(('ERROR','FAMILY', 'US01', fam.repo['DIV']['line'], fam.fam_id, error_message ))
-  
+
     return error
 
 

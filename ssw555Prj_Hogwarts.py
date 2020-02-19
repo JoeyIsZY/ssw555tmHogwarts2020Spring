@@ -87,7 +87,7 @@ class Repository:
 
     def get_file_reader(self, path):
         try:
-            fp = open(os.path.join(path, '555prj_Hogwarts_testfile.ged'), 'r')
+            fp = open(os.path.join(path, 'ssw555prj_Hogwarts_testfile.ged'), 'r')
         except FileNotFoundError:
             raise FileNotFoundError(f'File cannot be opened.')
         else:
