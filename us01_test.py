@@ -2,22 +2,24 @@
     Written by Haodong Wu   02/15/2020
 """
 import unittest
+import os
 from us01 import current_date_check
-from P03_Hogwarts_V2 import Repository
+from ssw555Prj_Hogwarts import Repository
 
 
 
 
 class Testcurrent_date_check(unittest.TestCase):
     def test_current_date_check(self):
+        path = os.getcwd()
         test = Repository()
-        test.get_file_reader()
+        test.get_file_reader(path)
         test.update_individuals()
         test.update_families()
-        self.assertEqual(current_date_check(test), ['ERROR! The birth date at line 22 is 10 JAN 2021 after now.',
-                                                    'ERROR! The death date at line 24 is 14 NOV 2088 after now.', 
-                                                    'ERROR! The marriage date at line 119 is 21 JUL 2033 after now.',
-                                                    'ERROR! The divorce date at line 121 is 1 JUL 2100 after now.'])
+        self.assertEqual(current_date_check(test), [('ERROR', 'INDIVIDUAL', 'US01', 119, '@I_W_US01_1@', 'Birthday 2021-01-01 occurs in the future.'), 
+                                                    ('ERROR', 'INDIVIDUAL', 'US01', 127, '@I_W_US01_2@', 'DEATH 2081-12-30 occurs in the future.'), 
+                                                    ('ERROR', 'FAMILY', 'US01', 170, '@F_W_US01_1@', 'Marriage date 2040-02-21 occurs in the future.'), 
+                                                    ('ERROR', 'FAMILY', 'US01', 172, '@F_W_US01_1@', 'Divorce date 2070-01-01 occurs in the future.')])
 
 if __name__ == "__main__":
     unittest.main(exit = False, verbosity= 2)
