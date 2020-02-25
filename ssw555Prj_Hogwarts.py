@@ -9,6 +9,8 @@ from datetime import datetime
 from prettytable import PrettyTable
 from us01 import current_date_check
 from us07 import not_olderthan150
+from us02 import birth_before_marriage
+from us03 import birth_before_death
 
 '''
 change_date_2020_2_11: change origin code from yz, Fangji Liang
@@ -87,7 +89,7 @@ class Repository:
 
     def get_file_reader(self, path):
         try:
-            fp = open(os.path.join(path, 'ssw555prj_Hogwarts_testfile.ged'), 'r')
+            fp = open(os.path.join(path, '/Users/huying/GitHub/ssw555tmHogwarts2020Spring/ssw555prj_Hogwarts_testfile.ged'), 'r')
         except FileNotFoundError:
             raise FileNotFoundError(f'File cannot be opened.')
         else:
@@ -191,6 +193,10 @@ def errors_print(repository1):
     #us01 in Sprint1 by Haodong Wu     02/18/2020
     errors_list += not_olderthan150(repository1)
     #us07 in Sprint1 by Haodong Wu     02/18/2020
+    errors_list += birth_before_marriage(repository1)
+    #us02 in Sprint1 by Ying Hu 2/24/2020
+    errors_list += birth_before_death(repository1)
+    #us03 in Sprint1 by Ying Hu 2/24/2020
     #add your own us return to the error_list
 
     pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
@@ -212,6 +218,7 @@ def main():
     test.table_individual()
     test.table_family()
     errors_print(test)
+
 
 if __name__ == '__main__':
     main()
