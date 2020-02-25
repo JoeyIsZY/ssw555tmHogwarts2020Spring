@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/us02_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us02_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/us03_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us03_test.py" afterDir="false" />
     </list>
@@ -20,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="yhu" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
