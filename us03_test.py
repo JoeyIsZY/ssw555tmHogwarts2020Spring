@@ -7,7 +7,7 @@ from us03 import birth_before_death
 from ssw555Prj_Hogwarts import Repository
 
 
-class MyTestCase(unittest.TestCase):
+class Testbirth_before_death(unittest.TestCase):
     def test_birth_before_death(self):
         path = os.getcwd()
         test = Repository()

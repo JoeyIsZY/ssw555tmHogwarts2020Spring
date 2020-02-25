@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/us02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/us02_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/us03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/us03_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us02_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us02_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us03_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us03_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +47,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="us03_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="us02_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="ssw555tmHogwarts2020Spring" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,7 +59,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us03_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us02_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581130988883</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add us02,us03,us02_test,us03_test">
+      <created>1582649613024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582649613024</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="add us02,us03,us02_test,us03_test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add us02,us03,us02_test,us03_test" />
   </component>
 </project>

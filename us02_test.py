@@ -7,7 +7,7 @@ from us02 import birth_before_marriage
 from ssw555Prj_Hogwarts import Repository
 
 
-class MyTestCase(unittest.TestCase):
+class Testbirth_before_marriage(unittest.TestCase):
     def test_birth_before_marriage(self):
         path = os.getcwd()
         test = Repository()
