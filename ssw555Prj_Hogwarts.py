@@ -11,6 +11,9 @@ from us01 import current_date_check
 from us07 import not_olderthan150
 from us02 import birth_before_marriage
 from us03 import birth_before_death
+from us04 import us04_marriage_before_divorce
+from us05 import us05_marriage_before_death
+
 
 '''
 change_date_2020_2_11: change origin code from yz, Fangji Liang
@@ -18,6 +21,8 @@ change_date_2020_2_17: 1.use fp.close() 2.reset dateitem's value 3.default: self
 change_date_2020_2_18: all date will store by datetime type in repository(Individual, Family), Fangji Liang
 changd_date_2020_2_18: add new function errors_print to collect and print all errors, Haodong Wu
 '''
+
+
 class Individual:
     """ This is the class to store the information of each person. """
     pt_labels = ['ID', 'Name', 'Gender', 'Birthday', 'Age', 'Alive', 'Death', 'Child', 'Spouse']
@@ -48,9 +53,9 @@ class Individual:
         self.age = int((dt2 - dt1).days / 365)
 
     def pt_row(self):
-        return (self.indi_id, self.repo['NAME']['detail'], self.repo['SEX']['detail'], 
-                f"{self.repo['BIRT']['detail']:%Y-%m-%d}", self.age, self.alive, 
-                "NA" if self.repo['DEAT']['detail'] == "NA" else  f"{self.repo['DEAT']['detail']:%Y-%m-%d}", 
+        return (self.indi_id, self.repo['NAME']['detail'], self.repo['SEX']['detail'],
+                f"{self.repo['BIRT']['detail']:%Y-%m-%d}", self.age, self.alive,
+                "NA" if self.repo['DEAT']['detail'] == "NA" else f"{self.repo['DEAT']['detail']:%Y-%m-%d}",
                 self.repo['FAMC']['detail'], self.repo['FAMS']['detail'])
 
 
@@ -77,10 +82,11 @@ class Family:
         self.wife_name = wife_name
 
     def pt_row(self):
-        return (self.fam_id, "NA" if self.repo['MARR']['detail'] == "NA" else f"{self.repo['MARR']['detail']:%Y-%m-%d}", 
-                "NA" if self.repo['DIV']['detail'] == "NA" else f"{self.repo['DIV']['detail']:%Y-%m-%d}", 
-                self.repo['HUSB']['detail'], self.husband_name, self.repo['WIFE']['detail'], 
+        return (self.fam_id, "NA" if self.repo['MARR']['detail'] == "NA" else f"{self.repo['MARR']['detail']:%Y-%m-%d}",
+                "NA" if self.repo['DIV']['detail'] == "NA" else f"{self.repo['DIV']['detail']:%Y-%m-%d}",
+                self.repo['HUSB']['detail'], self.husband_name, self.repo['WIFE']['detail'],
                 self.wife_name, self.repo['CHIL']['detail'])
+
 
 class Repository:
     def __init__(self):
@@ -100,7 +106,7 @@ class Repository:
             indi_id = ''
             fam_id = ''
             date_item = ''
-        
+
         with fp:
             for index, line in enumerate(fp, 1):
                 word = line.strip().split()
@@ -124,7 +130,7 @@ class Repository:
                             else:
                                 self.individuals[indi_id].repo[word[1]]['detail'].add(' '.join(word[2:]))
                         else:
-                            self.individuals[indi_id].repo[word[1]]['detail']= ' '.join(word[2:])
+                            self.individuals[indi_id].repo[word[1]]['detail'] = ' '.join(word[2:])
                     elif word[1] in fam_no_date:
                         if word[1] == 'CHIL':
                             self.families[fam_id].repo[word[1]]['line'] = index
@@ -142,13 +148,15 @@ class Repository:
                         if date_item == 'DEAT':
                             self.individuals[indi_id].set_alive(False)
                         self.individuals[indi_id].repo[date_item]['line'] = index
-                        #individual keywords with date stores by datetime types
-                        self.individuals[indi_id].repo[date_item]['detail'] = datetime.strptime(' '.join(word[2:]), '%d %b %Y')
+                        # individual keywords with date stores by datetime types
+                        self.individuals[indi_id].repo[date_item]['detail'] = datetime.strptime(' '.join(word[2:]),
+                                                                                                '%d %b %Y')
                         date_item = 'NA'
                     elif date_item in fam_date:
                         self.families[fam_id].repo[date_item]['line'] = index
-                        #families keywords with date stores by datetime type
-                        self.families[fam_id].repo[date_item]['detail'] = datetime.strptime(' '.join(word[2:]), '%d %b %Y')
+                        # families keywords with date stores by datetime type
+                        self.families[fam_id].repo[date_item]['detail'] = datetime.strptime(' '.join(word[2:]),
+                                                                                            '%d %b %Y')
                         date_item = 'NA'
                     else:
                         pass
@@ -181,6 +189,7 @@ class Repository:
             pt.add_row(self.families[fam_id].pt_row())
         print(pt)
 
+
 def errors_print(repository1):
     """This function is used to collect and print all error messages.
         Please make sure your us function return a list made of tuples.
@@ -190,27 +199,32 @@ def errors_print(repository1):
 
     errors_list = []
     errors_list += current_date_check(repository1)
-    #us01 in Sprint1 by Haodong Wu     02/18/2020
+    # us01 in Sprint1 by Haodong Wu     02/18/2020
     errors_list += not_olderthan150(repository1)
-    #us07 in Sprint1 by Haodong Wu     02/18/2020
+    # us07 in Sprint1 by Haodong Wu     02/18/2020
     errors_list += birth_before_marriage(repository1)
-    #us02 in Sprint1 by Ying Hu 2/24/2020
+    # us02 in Sprint1 by Ying Hu 2/24/2020
     errors_list += birth_before_death(repository1)
-    #us03 in Sprint1 by Ying Hu 2/24/2020
-    #add your own us return to the error_list
+    # us03 in Sprint1 by Ying Hu 2/24/2020
+    errors_list += us04_marriage_before_divorce(repository1)
+    # us04 in Sprint1 by Yu Zhou 2/26/2020
+    errors_list += us05_marriage_before_death(repository1)
+    # us05 in Sprint1 by Yu Zhou 2/26/2020
+    # add your own us return to the error_list
 
     pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
     pt = PrettyTable(field_names=pt_labels)
 
-    for index, (error_type, data_type, userstory_number, line, error_id, error_message ) in enumerate(errors_list, start = 1):
+    for index, (error_type, data_type, userstory_number, line, error_id, error_message) in enumerate(errors_list,
+                                                                                                     start=1):
         pt.add_row((index, error_type, data_type, userstory_number, line, error_id, error_message))
 
     print(pt)
-    
+
 
 def main():
     path = os.getcwd()
-    #Get Current Working Directory. If this not work for your pc, please hardcode the absolute path for you.
+    # Get Current Working Directory. If this not work for your pc, please hardcode the absolute path for you.
     test = Repository()
     test.get_file_reader(path)
     test.update_individuals()
