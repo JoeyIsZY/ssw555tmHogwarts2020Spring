@@ -5,3 +5,4 @@ python:
 # command to run tests
 script:
  - python -m unittest us04_test
+ - python -m unittest us05_test
