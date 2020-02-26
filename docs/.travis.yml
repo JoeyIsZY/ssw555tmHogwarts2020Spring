@@ -4,4 +4,4 @@ python:
 
 # command to run tests
 script:
- - python -m unittest 
+ - python -m unittest us04_test
