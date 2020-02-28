@@ -8,8 +8,8 @@ from ssw555Prj_Hogwarts import Repository
 from us09 import us09_birth_after_death
 
 
-class US04_TestCase(unittest.TestCase):
-    def test_us04(self):
+class US08_TestCase(unittest.TestCase):
+    def test_us08(self):
         path = os.getcwd()
         test = Repository()
         test.get_file_reader(path)
