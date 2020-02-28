@@ -1,0 +1,78 @@
++--------------+-----------------+--------+------------+-----+-------+------------+--------------+------------------+
+|      ID      |       Name      | Gender |  Birthday  | Age | Alive |   Death    |    Child     |      Spouse      |
++--------------+-----------------+--------+------------+-----+-------+------------+--------------+------------------+
+|     @I1@     | Rickard /Stark/ |   M    | 0512-01-10 |  38 | False | 0550-11-14 |      NA      |     {'@F1@'}     |
+|     @I2@     |  Lyarra /Stark/ |   F    | 0513-02-11 |  64 | False | 0577-11-10 |      NA      |     {'@F1@'}     |
+|     @I3@     |  Eddard /Stark/ |   M    | 0533-04-10 |  48 | False | 0581-12-11 |     @F1@     | {'@F3@', '@F2@'} |
+|     @I4@     |   Darcy /Snow/  |   F    | 0537-06-08 |  18 | False | 0556-03-29 |      NA      |     {'@F3@'}     |
+|     @I5@     |    Jon /Snow/   |   M    | 0555-08-12 |  32 | False | 0587-11-07 |     @F3@     |        NA        |
+|     @I6@     | Catelyn /Tully/ |   F    | 0535-05-21 |  55 | False | 0590-05-19 |      NA      |     {'@F2@'}     |
+|     @I7@     |   Robb /Stark/  |   M    | 0559-11-08 |  49 | False | 0609-09-19 |     @F2@     |        NA        |
+|     @I8@     |  Sansa /Stark/  |   F    | 0562-01-02 |  48 | False | 0610-11-08 |     @F2@     |        NA        |
+|     @I9@     |   Arya /Stark/  |   F    | 0562-01-02 |  50 | False | 0612-08-15 |     @F2@     |        NA        |
+| @I_H_US02_1@ |      R /S/      |   M    | 1600-01-10 |  10 | False | 1610-11-14 |      NA      |        NA        |
+| @I_H_US02_2@ |      L /S/      |   F    | 1600-02-11 |  30 | False | 1630-11-10 |      NA      |        NA        |
+| @I_H_US03_1@ |     Ll /Ss/     |   F    | 1630-02-11 | -29 | False | 1600-11-10 |      NA      | {'@F_H_US02_1@'} |
+| @I_L_US08_1@ |  LeBron /James/ |   M    | 1970-06-03 |  49 |  True |     NA     |      NA      | {'@F_L_US08_1@'} |
+| @I_L_US08_2@ | Anthony /Davis/ |   F    | 1970-05-16 |  49 |  True |     NA     |      NA      | {'@F_L_US08_1@'} |
+| @I_L_US08_3@ |  Three /Zhang/  |   M    | 1970-01-03 |  50 |  True |     NA     |      NA      | {'@F_L_US08_2@'} |
+| @I_L_US08_4@ |    Four /Li/    |   F    | 1970-07-16 |  49 |  True |     NA     |      NA      | {'@F_L_US08_2@'} |
+| @I_L_US08_5@ |    Five /Li/    |   F    | 1992-07-16 |  27 |  True |     NA     | @F_L_US08_1@ |        NA        |
+| @I_L_US08_6@ |     Six /Li/    |   F    | 1998-07-16 |  21 |  True |     NA     | @F_L_US08_2@ |        NA        |
+| @I_L_US09_1@ |   Yifan /Liu/   |   M    | 1970-09-03 |  49 |  True |     NA     |      NA      | {'@F_L_US09_1@'} |
+| @I_L_US09_2@ | Chenchen /Hong/ |   F    | 1970-06-16 |  24 | False | 1995-05-04 |      NA      | {'@F_L_US09_1@'} |
+| @I_L_US09_3@ |   Five /Wang/   |   M    | 1970-01-01 |  24 | False | 1994-04-04 |      NA      | {'@F_L_US09_2@'} |
+| @I_L_US09_4@ |   Four /Lhao/   |   F    | 1970-07-16 |  49 |  True |     NA     |      NA      | {'@F_L_US09_2@'} |
+| @I_L_US09_5@ |   Four /Lhao/   |   F    | 1996-07-16 |  23 |  True |     NA     | @F_L_US09_1@ |        NA        |
+| @I_L_US09_6@ |   Four /Lhao/   |   F    | 1995-07-16 |  24 |  True |     NA     | @F_L_US09_2@ |        NA        |
+| @I_W_US01_1@ |   Future /Man/  |   M    | 2021-01-01 |  0  |  True |     NA     |      NA      | {'@F_W_US01_1@'} |
+| @I_W_US01_2@ |  Future /Woman/ |   F    | 2000-01-01 |  82 | False | 2081-12-30 |      NA      | {'@F_W_US01_1@'} |
+| @I_W_US07_1@ |    Old /Man/    |   M    | 1860-01-01 | 160 |  True |     NA     |      NA      |        NA        |
+| @I_W_US07_2@ |   Old /Woman/   |   F    | 1850-01-01 | 155 | False | 2005-01-02 |      NA      |        NA        |
+| @I_Z_US04_1@ |  LeBron /James/ |   M    | 1996-06-03 |  23 |  True |     NA     |      NA      | {'@F_Z_US04_1@'} |
+| @I_Z_US04_2@ | Anthony /Davis/ |   F    | 1996-05-16 |  23 |  True |     NA     |      NA      | {'@F_Z_US04_1@'} |
+| @I_Z_US04_3@ |  Three /Zhang/  |   M    | 1996-01-03 |  24 |  True |     NA     |      NA      | {'@F_Z_US04_2@'} |
+| @I_Z_US04_4@ |    Four /Li/    |   F    | 1996-07-16 |  23 |  True |     NA     |      NA      | {'@F_Z_US04_2@'} |
+| @I_Z_US05_1@ |   Yifan /Liu/   |   M    | 1996-09-03 |  3  | False | 2000-05-04 |      NA      | {'@F_Z_US05_1@'} |
+| @I_Z_US05_2@ | Chenchen /Hong/ |   F    | 1996-06-16 |  23 |  True |     NA     |      NA      | {'@F_Z_US05_1@'} |
+| @I_Z_US05_3@ |   Five /Wang/   |   M    | 1996-01-01 |  24 |  True |     NA     |      NA      | {'@F_Z_US05_2@'} |
+| @I_Z_US05_4@ |   Four /Zhao/   |   F    | 1996-07-16 |  13 | False | 2010-04-04 |      NA      | {'@F_Z_US05_2@'} |
++--------------+-----------------+--------+------------+-----+-------+------------+--------------+------------------+
++--------------+------------+------------+--------------+-----------------+--------------+-----------------+--------------------------+
+|      ID      |  Married   |  Divorced  |  Husband ID  |   Husband Name  |   Wife ID    |    Wife Name    |         Children         |
++--------------+------------+------------+--------------+-----------------+--------------+-----------------+--------------------------+
+|     @F1@     | 0531-07-21 |     NA     |     @I1@     | Rickard /Stark/ |     @I2@     |  Lyarra /Stark/ |         {'@I3@'}         |
+|     @F2@     | 0558-10-21 |     NA     |     @I3@     |  Eddard /Stark/ |     @I6@     | Catelyn /Tully/ | {'@I7@', '@I9@', '@I8@'} |
+|     @F3@     | 0554-03-03 |     NA     |     @I3@     |  Eddard /Stark/ |     @I4@     |   Darcy /Snow/  |         {'@I5@'}         |
+| @F_H_US02_1@ | 1531-07-21 |     NA     | @I_H_US02_1@ |      R /S/      | @I_H_US02_2@ |      L /S/      |            NA            |
+| @F_L_US08_1@ | 1994-02-02 | 2010-09-18 | @I_L_US08_1@ |  LeBron /James/ | @I_L_US08_2@ | Anthony /Davis/ |     {'@I_L_US08_5@'}     |
+| @F_L_US08_2@ | 1994-02-02 | 1997-09-18 | @I_L_US08_3@ |  Three /Zhang/  | @I_L_US08_4@ |    Four /Li/    |     {'@I_L_US08_6@'}     |
+| @F_L_US09_1@ | 1991-08-08 |     NA     | @I_L_US09_1@ |   Yifan /Liu/   | @I_L_US09_2@ | Chenchen /Hong/ |     {'@I_L_US09_5@'}     |
+| @F_L_US09_2@ | 1991-02-02 |     NA     | @I_L_US09_3@ |   Five /Wang/   | @I_L_US09_4@ |   Four /Lhao/   |     {'@I_L_US09_6@'}     |
+| @F_W_US01_1@ | 2040-02-21 | 2070-01-01 | @I_W_US01_1@ |   Future /Man/  | @I_W_US01_2@ |  Future /Woman/ |            NA            |
+| @F_Z_US04_1@ |     NA     |     NA     | @I_Z_US04_1@ |  LeBron /James/ | @I_Z_US04_2@ | Anthony /Davis/ |            NA            |
+| @F_Z_US04_2@ | 2020-02-02 | 2019-09-18 | @I_Z_US04_3@ |  Three /Zhang/  | @I_Z_US04_4@ |    Four /Li/    |            NA            |
+| @F_Z_US05_1@ | 2010-08-08 |     NA     | @I_Z_US05_1@ |   Yifan /Liu/   | @I_Z_US05_2@ | Chenchen /Hong/ |            NA            |
+| @F_Z_US05_2@ | 2018-02-02 | 2019-09-01 | @I_Z_US05_3@ |   Five /Wang/   | @I_Z_US05_4@ |   Four /Zhao/   |            NA            |
++--------------+------------+------------+--------------+-----------------+--------------+-----------------+--------------------------+
++-------+---------------+------------+-------------------+-----------------+--------------+-------------------------------------------------------------------------------------------+
+| Index | ERROR/ANOMALY | Data Type  | User Story Number |       Line      |   Error ID   |                                       Error Message                                       |
++-------+---------------+------------+-------------------+-----------------+--------------+-------------------------------------------------------------------------------------------+
+|   1   |     ERROR     | INDIVIDUAL |        US01       |       119       | @I_W_US01_1@ |                         Birthday 2021-01-01 occurs in the future.                         |
+|   2   |     ERROR     | INDIVIDUAL |        US01       |       127       | @I_W_US01_2@ |                           DEATH 2081-12-30 occurs in the future.                          |
+|   3   |     ERROR     |   FAMILY   |        US01       |       201       | @F_W_US01_1@ |                       Marriage date 2040-02-21 occurs in the future.                      |
+|   4   |     ERROR     |   FAMILY   |        US01       |       203       | @F_W_US01_1@ |                       Divorce date 2070-01-01 occurs in the future.                       |
+|   5   |     ERROR     | INDIVIDUAL |        US07       |       133       | @I_W_US07_1@ |                     More than 150 years old - Birth date: 1860-01-01.                     |
+|   6   |     ERROR     | INDIVIDUAL |        US07       |       138       | @I_W_US07_2@ |     More than 150 years old at death - Birth date: 1850-01-01, Death date: 2005-01-02.    |
+|   7   |     ERROR     |   FAMILY   |        US02       |       209       | @F_H_US02_1@ |              Marriage date 1531-07-21 occurs before husband birth 1600-01-10.             |
+|   8   |     ERROR     |   FAMILY   |        US02       |       209       | @F_H_US02_1@ |               Marriage date 1531-07-21 occurs before wife birth 1600-02-11.               |
+|   9   |     ERROR     | INDIVIDUAL |        US03       |       170       | @I_H_US03_1@ |                      Death 1600-11-10 occurs before birth 1630-02-11.                     |
+|   10  |     ERROR     |   FAMILY   |        US04       |       235       | @F_Z_US04_1@ |                         Family @F_Z_US04_1@ has no marriage date.                         |
+|   11  |     ERROR     |   FAMILY   |        US04       | (238, 242, 244) | @F_Z_US04_2@ |               Family @F_Z_US04_2@ marriage date is after than divorce date.               |
+|   12  |     ERROR     | INDIVIDUAL |        US05       |    (251, 277)   | @I_Z_US05_1@ |                      Husband:<@I_Z_US05_1@> dead before he married.                       |
+|   13  |     ERROR     | INDIVIDUAL |        US05       |    (271, 282)   | @I_Z_US05_4@ |                        Wife:<@I_Z_US05_4@> dead before he married.                        |
+|   14  |    ANOMALY    |   FAMILY   |        US08       |    (326, 313)   | @F_L_US08_1@ |              Marriage date 1994-02-02 occurs after children birth 1992-07-16.             |
+|   15  |    ANOMALY    |   FAMILY   |        US08       |    (334, 319)   | @F_L_US08_2@ |     Divorce date 1997-09-18 occurs more than 9 month before children birth 1998-07-16.    |
+|   16  |     ERROR     |   FAMILY   |        US09       |    (349, 369)   | @F_L_US09_1@ |          Mother's death date 1995-05-04 occurs before children birth 1996-07-16.          |
+|   17  |    ANOMALY    |   FAMILY   |        US09       |    (357, 375)   | @F_L_US09_2@ | Father's death date 1994-04-04 occurs more than 9 month before children birth 1995-07-16. |
++-------+---------------+------------+-------------------+-----------------+--------------+-------------------------------------------------------------------------------------------+

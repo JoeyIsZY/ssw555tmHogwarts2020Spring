@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="us03_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="ssw555prj_Hogwarts" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="ssw555tmHogwarts2020Spring" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,7 +64,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us03_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ssw555prj_Hogwarts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582925038765</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update Team Report :Sprint1 review, Sprint 2 plan, Burn down">
+      <created>1582927060438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582927060438</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update file path">
+      <created>1582927097222</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582927097222</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +177,8 @@
     <MESSAGE value="1. modify ged date of year for us02 and us03. Conflicts shown when the year is 3 numbers in linux.&#10;2. format us and us_test name" />
     <MESSAGE value="format test mothod name" />
     <MESSAGE value="modify methods' name" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify methods' name" />
+    <MESSAGE value="update Team Report :Sprint1 review, Sprint 2 plan, Burn down" />
+    <MESSAGE value="update file path" />
+    <option name="LAST_COMMIT_MESSAGE" value="update file path" />
   </component>
 </project>
