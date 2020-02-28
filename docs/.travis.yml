@@ -1,8 +1,6 @@
 language: python
 python:
  - "3.7"
-
 # command to run tests
 script:
- - python -m unittest US08_Test
- - python -m unittest US09_Test
+ - python -m unittest US09_TEST
