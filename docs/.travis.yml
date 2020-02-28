@@ -1,0 +1,15 @@
+language: python
+python:
+ - "3.8.2"
+install:
+ - pip install PrettyTable
+# command to run tests
+script:
+ - python -m unittest us01_test
+ - python -m unittest us02_test
+ - python -m unittest us03_test
+ - python -m unittest us04_test
+ - python -m unittest us05_test
+ - python -m unittest us07_test
+ - python -m unittest US08_TEST
+ - python -m unittest US09_TEST
