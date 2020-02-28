@@ -14,7 +14,7 @@ class Testbirth_before_marriage(unittest.TestCase):
         test.get_file_reader(path)
         test.update_individuals()
         test.update_families()
-        self.assertEqual(birth_before_marriage(test), [('ERROR', 'FAMILY', 'US02', 209, '@F_H_US02_1@',
+        self.assertEqual(us02_birth_before_marriage(test), [('ERROR', 'FAMILY', 'US02', 209, '@F_H_US02_1@',
                                                         'Marriage date 1531-07-21 occurs before husband birth 1600-01-10.'),
                                                     ('ERROR', 'FAMILY', 'US02', 209, '@F_H_US02_1@',
                                                      'Marriage date 1531-07-21 occurs before wife birth 1600-02-11.')])
