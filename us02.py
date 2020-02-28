@@ -18,12 +18,12 @@ def birth_before_marriage(repo1):
         for indi in repo1.individuals.values():
             if indi.indi_id == hus_id:
                 hus_birt = indi.repo['BIRT']['detail']
-                if hus_birt != 'NA' and marr < hus_birt:
+                if hus_birt != 'NA' and marr != 'NA' and marr < hus_birt:
                     error_message = f'Marriage date {str(marr.strftime("%Y-%m-%d"))} occurs before husband birth {str(hus_birt.strftime("%Y-%m-%d"))}.'
                     error.append(('ERROR', 'FAMILY', 'US02', fam.repo['MARR']['line'], fam.fam_id, error_message))
             elif indi.indi_id == wife_id:
                 wife_birt = indi.repo['BIRT']['detail']
-                if wife_birt != 'NA' and marr < wife_birt:
+                if wife_birt != 'NA' and marr != 'NA' and marr < wife_birt:
                     error_message = f'Marriage date {str(marr.strftime("%Y-%m-%d"))} occurs before wife birth {str(wife_birt.strftime("%Y-%m-%d"))}.'
                     error.append(('ERROR', 'FAMILY', 'US02', fam.repo['MARR']['line'], fam.fam_id, error_message))
 
