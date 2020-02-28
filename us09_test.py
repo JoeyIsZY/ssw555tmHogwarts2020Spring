@@ -8,7 +8,7 @@ from ssw555Prj_Hogwarts import Repository
 from us09 import us09_birth_after_death
 
 
-class US08_TestCase(unittest.TestCase):
+class US09_TestCase(unittest.TestCase):
     def test_us08(self):
         path = os.getcwd()
         test = Repository()
