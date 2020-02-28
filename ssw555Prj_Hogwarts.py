@@ -200,13 +200,13 @@ def errors_print(repository1):
          Written by Haodong Wu      02/18/2020"""
 
     errors_list = []
-    errors_list += current_date_check(repository1)
+    errors_list += us01_current_date_check(repository1)
     # us01 in Sprint1 by Haodong Wu     02/18/2020
-    errors_list += not_olderthan150(repository1)
+    errors_list += us07_not_olderthan150(repository1)
     # us07 in Sprint1 by Haodong Wu     02/18/2020
-    errors_list += birth_before_marriage(repository1)
+    errors_list += us02_birth_before_marriage(repository1)
     # us02 in Sprint1 by Ying Hu 2/24/2020
-    errors_list += birth_before_death(repository1)
+    errors_list += us03_birth_before_death(repository1)
     # us03 in Sprint1 by Ying Hu 2/24/2020
     errors_list += us04_marriage_before_divorce(repository1)
     # us04 in Sprint1 by Yu Zhou 2/26/2020
