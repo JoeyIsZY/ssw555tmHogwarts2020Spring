@@ -13,8 +13,8 @@ from us02 import birth_before_marriage
 from us03 import birth_before_death
 from us04 import us04_marriage_before_divorce
 from us05 import us05_marriage_before_death
-from US08 import us08_birth_before_marriage
-from US09 import us09_birth_after_death
+from us08 import us08_birth_before_marriage
+from us09 import us09_birth_after_death
 
 
 '''
@@ -97,7 +97,7 @@ class Repository:
 
     def get_file_reader(self, path):
         try:
-            fp = open(os.path.join(path, '/Users/huying/GitHub/ssw555tmHogwarts2020Spring/ssw555prj_Hogwarts_testfile.ged'), 'r')
+            fp = open(os.path.join(path, 'ssw555prj_Hogwarts_testfile.ged'), 'r')
         except FileNotFoundError:
             raise FileNotFoundError(f'File cannot be opened.')
         else:

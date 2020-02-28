@@ -14,7 +14,7 @@ class Testbirth_before_death(unittest.TestCase):
         test.get_file_reader(path)
         test.update_individuals()
         test.update_families()
-        self.assertEqual(birth_before_death(test), [('ERROR', 'INDIVIDUAL', 'US03', 170, '@I_H_US03_1@', 'Death 0600-11-10 occurs before birth 0630-02-11.')])
+        self.assertEqual(birth_before_death(test), [('ERROR', 'INDIVIDUAL', 'US03', 170, '@I_H_US03_1@', 'Death 1600-11-10 occurs before birth 1630-02-11.')])
 
 
 if __name__ == '__main__':

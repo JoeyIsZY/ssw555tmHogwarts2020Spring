@@ -5,7 +5,7 @@ Fangji Liang 2/28/2020'''
 import os
 import unittest
 from ssw555Prj_Hogwarts import Repository
-from US09 import us09_birth_after_death
+from us09 import us09_birth_after_death
 
 
 class US04_TestCase(unittest.TestCase):

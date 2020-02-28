@@ -5,7 +5,7 @@ Fangji Liang 2/28/2020'''
 import os
 import unittest
 from ssw555Prj_Hogwarts import Repository
-from US08 import us08_birth_before_marriage
+from us08 import us08_birth_before_marriage
 
 
 class US04_TestCase(unittest.TestCase):
