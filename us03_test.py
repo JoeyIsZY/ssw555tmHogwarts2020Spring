@@ -3,7 +3,7 @@
 """
 import unittest
 import os
-from us03 import birth_before_death
+from us03 import us03_birth_before_death
 from ssw555Prj_Hogwarts import Repository
 
 

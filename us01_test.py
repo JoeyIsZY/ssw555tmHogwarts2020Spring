@@ -3,10 +3,8 @@
 """
 import unittest
 import os
-from us01 import current_date_check
+from us01 import us01_current_date_check
 from ssw555Prj_Hogwarts import Repository
-
-
 
 
 class Testcurrent_date_check(unittest.TestCase):

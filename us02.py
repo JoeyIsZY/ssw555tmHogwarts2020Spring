@@ -7,7 +7,7 @@ Author: Ying Hu
 import datetime
 
 
-def birth_before_marriage(repo1):
+def us02_birth_before_marriage(repo1):
     error = []
 
     for fam in repo1.families.values():

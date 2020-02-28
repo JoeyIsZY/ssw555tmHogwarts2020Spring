@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/US08.py" beforeDir="false" afterPath="$PROJECT_DIR$/us08.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/US08_TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/us08_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/US09.py" beforeDir="false" afterPath="$PROJECT_DIR$/us09.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/US09_TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/us09_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us01.py" beforeDir="false" afterPath="$PROJECT_DIR$/us01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582649613024</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. modify ged date of year for us02 and us03. Conflicts shown when the year is 3 numbers in linux.&#10;2. format us and us_test name">
+      <created>1582921954888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582921954888</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="add us02,us03,us02_test,us03_test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add us02,us03,us02_test,us03_test" />
+    <MESSAGE value="1. modify ged date of year for us02 and us03. Conflicts shown when the year is 3 numbers in linux.&#10;2. format us and us_test name" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. modify ged date of year for us02 and us03. Conflicts shown when the year is 3 numbers in linux.&#10;2. format us and us_test name" />
   </component>
 </project>

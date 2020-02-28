@@ -3,7 +3,7 @@
 import datetime
 
 
-def not_olderthan150(repo1):
+def us07_not_olderthan150(repo1):
     """get the repo including all individuals then calculate their ages"""
     error = []
 

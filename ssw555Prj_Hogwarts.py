@@ -7,10 +7,10 @@ AUthor: yzhou，Fangji Liang
 import os
 from datetime import datetime
 from prettytable import PrettyTable
-from us01 import current_date_check
-from us07 import not_olderthan150
-from us02 import birth_before_marriage
-from us03 import birth_before_death
+from us01 import us01_current_date_check
+from us07 import us07_not_olderthan150
+from us02 import us02_birth_before_marriage
+from us03 import us03_birth_before_death
 from us04 import us04_marriage_before_divorce
 from us05 import us05_marriage_before_death
 from us08 import us08_birth_before_marriage

@@ -7,7 +7,7 @@ Author: Ying Hu
 import datetime
 
 
-def birth_before_death(repo1):
+def us03_birth_before_death(repo1):
     error = []
 
     for indi in repo1.individuals.values():
