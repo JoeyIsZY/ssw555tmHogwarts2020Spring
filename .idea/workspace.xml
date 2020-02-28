@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="" />
+    <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="modify methods' name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582923025639</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify methods' name">
+      <created>1582923329514</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582923329514</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +147,7 @@
     <MESSAGE value="add us02,us03,us02_test,us03_test" />
     <MESSAGE value="1. modify ged date of year for us02 and us03. Conflicts shown when the year is 3 numbers in linux.&#10;2. format us and us_test name" />
     <MESSAGE value="format test mothod name" />
-    <option name="LAST_COMMIT_MESSAGE" value="format test mothod name" />
+    <MESSAGE value="modify methods' name" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify methods' name" />
   </component>
 </project>
