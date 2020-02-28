@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us02_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us02_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us03_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us03_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us09_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us09_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582923828826</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modify methods' name">
+      <created>1582925038765</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582925038765</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
