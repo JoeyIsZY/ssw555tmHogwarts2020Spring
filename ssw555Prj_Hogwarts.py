@@ -13,6 +13,8 @@ from us02 import birth_before_marriage
 from us03 import birth_before_death
 from us04 import us04_marriage_before_divorce
 from us05 import us05_marriage_before_death
+from US08 import us08_birth_before_marriage
+from US09 import us09_birth_after_death
 
 
 '''
@@ -210,6 +212,10 @@ def errors_print(repository1):
     # us04 in Sprint1 by Yu Zhou 2/26/2020
     errors_list += us05_marriage_before_death(repository1)
     # us05 in Sprint1 by Yu Zhou 2/26/2020
+    errors_list += us08_birth_before_marriage(repository1)
+    # us08 in Sprint1 by Fangji Liang Zhou 2/28/2020
+    errors_list += us09_birth_after_death(repository1)
+    # us09 in Sprint1 by Fangji Liang Zhou 2/28/2020
     # add your own us return to the error_list
 
     pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
