@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/proj03_hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj03_hogwarts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +11,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="yhu" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -37,6 +51,29 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="ssw555prj_Hogwarts" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ssw555tmHogwarts2020Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ssw555prj_Hogwarts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -55,7 +92,70 @@
       <option name="project" value="LOCAL" />
       <updated>1581130988883</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add us02,us03,us02_test,us03_test">
+      <created>1582649613024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582649613024</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1. modify ged date of year for us02 and us03. Conflicts shown when the year is 3 numbers in linux.&#10;2. format us and us_test name">
+      <created>1582921954888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582921954888</updated>
+    </task>
+    <task id="LOCAL-00004" summary="format test mothod name">
+      <created>1582922978321</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582922978321</updated>
+    </task>
+    <task id="LOCAL-00005" summary="format test mothod name">
+      <created>1582923025639</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582923025639</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modify methods' name">
+      <created>1582923329514</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582923329514</updated>
+    </task>
+    <task id="LOCAL-00007" summary="modify methods' name">
+      <created>1582923828826</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582923828826</updated>
+    </task>
+    <task id="LOCAL-00008" summary="modify methods' name">
+      <created>1582925038765</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582925038765</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update Team Report :Sprint1 review, Sprint 2 plan, Burn down">
+      <created>1582927060438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582927060438</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update file path">
+      <created>1582927097222</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582927097222</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -73,6 +173,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="add us02,us03,us02_test,us03_test" />
+    <MESSAGE value="1. modify ged date of year for us02 and us03. Conflicts shown when the year is 3 numbers in linux.&#10;2. format us and us_test name" />
+    <MESSAGE value="format test mothod name" />
+    <MESSAGE value="modify methods' name" />
+    <MESSAGE value="update Team Report :Sprint1 review, Sprint 2 plan, Burn down" />
+    <MESSAGE value="update file path" />
+    <option name="LAST_COMMIT_MESSAGE" value="update file path" />
   </component>
 </project>
