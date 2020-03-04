@@ -6,13 +6,13 @@ install:
  - pip install PrettyTable
 # command to run tests
 script:
- - python -m unittest userstory/us01_test
- - python -m unittest userstory/us02_test
- - python -m unittest userstory/us03_test
- - python -m unittest userstory/us04_test
- - python -m unittest userstory/us05_test
- - python -m unittest userstory/us07_test
- - python -m unittest userstory/us08_test
- - python -m unittest userstory/us09_test
- - python -m unittest userstory/us17_test
- - python -m unittest userstory/us18_test
+ - python -m unittest userstory.us01_test
+ - python -m unittest userstory.us02_test
+ - python -m unittest userstory.us03_test
+ - python -m unittest userstory.us04_test
+ - python -m unittest userstory.us05_test
+ - python -m unittest userstory.us07_test
+ - python -m unittest userstory.us08_test
+ - python -m unittest userstory.us09_test
+ - python -m unittest userstory.us17_test
+ - python -m unittest userstory.us18_test
