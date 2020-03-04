@@ -16,5 +16,6 @@ script:
 #  - python -m unittest userstory.us09_test
 #  - python -m unittest userstory.us17_test
 # - python -m unittest userstory.us18_test
--python import sys
--python print(sys.path)
+-python -m import sys
+-python -m sys.path.append('../')
+-python -m print(sys.path)
