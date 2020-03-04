@@ -7,15 +7,16 @@ AUthor: yzhou，Fangji Liang
 import os
 from datetime import datetime
 from prettytable import PrettyTable
-from us01 import us01_current_date_check
-from us07 import us07_not_olderthan150
-from us02 import us02_birth_before_marriage
-from us03 import us03_birth_before_death
-from us04 import us04_marriage_before_divorce
-from us05 import us05_marriage_before_death
-from us08 import us08_birth_before_marriage
-from us09 import us09_birth_after_death
-
+from userstory.us01 import us01_current_date_check
+from userstory.us07 import us07_not_olderthan150
+from userstory.us02 import us02_birth_before_marriage
+from userstory.us03 import us03_birth_before_death
+from userstory.us04 import us04_marriage_before_divorce
+from userstory.us05 import us05_marriage_before_death
+from userstory.us08 import us08_birth_before_marriage
+from userstory.us09 import us09_birth_after_death
+from userstory.us17 import us17_no_marriages_to_children
+from userstory.us18 import us18_no_marriages_between_siblings
 
 '''
 change_date_2020_2_11: change origin code from yz, Fangji Liang
@@ -217,6 +218,10 @@ def errors_print(repository1):
     errors_list += us09_birth_after_death(repository1)
     # us09 in Sprint1 by Fangji Liang Zhou 2/28/2020
     # add your own us return to the error_list
+    errors_list += us17_no_marriages_to_children(repository1)
+    # us17 in Sprint2 by Haodng Wu  25/02/2020
+    errors_list += us18_no_marriages_between_siblings(repository1)
+    # us17 in Sprint2 by Haodng Wu, Yingh Hu  25/02/2020
 
     pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
     pt = PrettyTable(field_names=pt_labels)
