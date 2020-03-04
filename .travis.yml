@@ -6,9 +6,6 @@ install:
  - pip install PrettyTable
 # command to run tests
 script:
-import sys 
-sys.path.append(os.path.join(os.getcwd(), '.'))
-#in order to import file from different folder, we need add add a new path
  - python -m unittest $TRAVIS_BUILD_DIR/userstory/us01_test
 #  - python -m unittest userstory.us02_test
 #  - python -m unittest userstory.us03_test
