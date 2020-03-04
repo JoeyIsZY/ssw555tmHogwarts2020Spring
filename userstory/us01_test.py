@@ -3,6 +3,9 @@
 """
 import unittest
 import os
+import sys 
+sys.path.append(os.path.join(os.getcwd(), '.'))
+#in order to import file from different folder, we need add add a new path
 from us01 import us01_current_date_check
 from ssw555Prj_Hogwarts import Repository
 

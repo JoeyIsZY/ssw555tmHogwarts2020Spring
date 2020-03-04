@@ -1,8 +1,12 @@
 """This is a test file for us18.py
     Written by Haodong Wu   02/25/2020
 """
+
 import unittest
 import os
+import sys 
+sys.path.append(os.path.join(os.getcwd(), '.'))
+#in order to import file from different folder, we need add add a new path
 from us18 import us18_no_marriages_between_siblings
 from ssw555Prj_Hogwarts import Repository
 

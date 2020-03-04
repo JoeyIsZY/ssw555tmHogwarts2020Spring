@@ -3,6 +3,9 @@
 """
 import unittest
 import os
+import sys 
+sys.path.append(os.path.join(os.getcwd(), '.'))
+#in order to import file from different folder, we need add add a new path
 from us07 import us07_not_olderthan150
 from ssw555Prj_Hogwarts import Repository
 
