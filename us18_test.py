@@ -5,9 +5,6 @@
 import unittest
 import os
 import sys 
-sys.path.append('../')
-print(sys.path)
-#in order to import file from different folder, we need add add a new path
 from us18 import us18_no_marriages_between_siblings
 from ssw555Prj_Hogwarts import Repository
 

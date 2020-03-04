@@ -4,9 +4,6 @@ Fangji Liang 2/28/2020'''
 
 import os
 import unittest
-import sys 
-sys.path.append(os.path.join(os.getcwd(), '.'))
-#in order to import file from different folder, we need add add a new path
 from ssw555Prj_Hogwarts import Repository
 from us09 import us09_birth_after_death
 
