@@ -5,6 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us04_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us04_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us08.py" beforeDir="false" afterPath="$PROJECT_DIR$/us08.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us09.py" beforeDir="false" afterPath="$PROJECT_DIR$/us09.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us12.py" beforeDir="false" afterPath="$PROJECT_DIR$/us12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us12_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us12_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +58,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="us18_test" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="us12_test" type="PythonConfigurationType" factoryName="Python">
       <module name="ssw555tmHogwarts2020Spring" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,7 +70,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us01_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us12_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582928608155</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update GED testfile">
+      <created>1584323561777</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584323561777</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update GED testfile">
+      <created>1584327220847</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1584327220847</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +215,7 @@
     <MESSAGE value="update file path" />
     <MESSAGE value="upload sprint1_test_result" />
     <MESSAGE value="update team report" />
-    <option name="LAST_COMMIT_MESSAGE" value="update team report" />
+    <MESSAGE value="update GED testfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="update GED testfile" />
   </component>
 </project>
