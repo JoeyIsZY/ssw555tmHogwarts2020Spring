@@ -15,9 +15,9 @@ class Testdivorce_before_death(unittest.TestCase):
         test.update_individuals()
         test.update_families()
         self.assertEqual(us06_divorce_before_death(test), [('ERROR', 'FAMILY', 'US06', 479, '@F_H_US06_1@',
-                                                     'Divorce date 1050-01-01 occurs after husband death 0700-11-10.'),
+                                                     'Divorce date 1712-01-01 occurs after husband death 1700-11-10.'),
                                                       ('ERROR', 'FAMILY', 'US06', 479, '@F_H_US06_1@',
-                                                        'Divorce date 1050-01-01 occurs after wife death 0711-11-10.')])
+                                                        'Divorce date 1712-01-01 occurs after wife death 1711-11-10.')])
 
 
 if __name__ == '__main__':
