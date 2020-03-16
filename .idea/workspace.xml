@@ -4,12 +4,11 @@
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us04_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us04_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/us08.py" beforeDir="false" afterPath="$PROJECT_DIR$/us08.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us08_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us08_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/us09.py" beforeDir="false" afterPath="$PROJECT_DIR$/us09.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us09_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us09_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/us12.py" beforeDir="false" afterPath="$PROJECT_DIR$/us12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us12_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us12_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="us12_test" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="us09_test" type="PythonConfigurationType" factoryName="Python">
       <module name="ssw555tmHogwarts2020Spring" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,7 +69,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us12_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us09_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584327220847</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update GED testfile">
+      <created>1584328079519</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1584328079519</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -15,4 +15,6 @@ def us08_birth_before_marriage(repos):
                     if fam.repo['DIV']['detail'] != 'NA':
                         if (chil_bir['detail'] - fam.repo['DIV']['detail']).days > 270:
                             err.append(('ANOMALY', 'FAMILY', 'US08', (fam.repo['MARR']['line'], chil_bir['line']), fam.fam_id, f"Divorce date {fam.repo['DIV']['detail']:%Y-%m-%d} occurs more than 9 month before children birth {chil_bir['detail']:%Y-%m-%d}."))
+
     return err
+
