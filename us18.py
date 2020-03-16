@@ -23,5 +23,4 @@ def us18_no_marriages_between_siblings(repo1):
                                 #error.append(('ANOMALY','FAMILY', 'US18', fam.repo['MARR']['line'], fam.fam_id, error_message))
                                 error.append(('ANOMALY', 'FAMILY', 'US18', str(fam.repo['MARR']['line']), fam.fam_id, error_message))
                                 #error.append('1')
-    print(error)
     return error
