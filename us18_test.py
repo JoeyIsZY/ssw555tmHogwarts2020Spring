@@ -8,7 +8,7 @@ import sys
 from us18 import us18_no_marriages_between_siblings
 from ssw555Prj_Hogwarts import Repository
 
-class Testno_marriages_to_children(unittest.TestCase):
+class Test_us18_no_marriages_between_siblings(unittest.TestCase):
     def test_us18_no_marriages_between_siblings(self):
         path = os.getcwd()
         test = Repository()
