@@ -21,6 +21,8 @@ from us06 import us06_divorce_before_death
 from us12 import us12_parents_not_too_old
 from us10 import us10_marriage_after_14
 from us11 import us11_no_bigamy
+from us15 import us15_more_than_15siblings
+from us16 import us16_same_male_surname
 '''
 change_date_2020_2_11: change origin code from yz, Fangji Liang
 change_date_2020_2_17: 1.use fp.close() 2.reset dateitem's value 3.default: self.alive = True 4. add us01 5.add us07, Haodong Wu
@@ -231,7 +233,11 @@ def errors_print(repository1):
     errors_list += us10_marriage_after_14(repository1)
     # us11 in Sprint2 by Yu Zhou  18/03/2020
     errors_list += us11_no_bigamy(repository1)
-
+    #us15 in Sprint2 by Fangji Liang 22/03/2020
+    errors_list += us15_more_than_15siblings(repository1)
+    #us16 in Sprint2 by Fangji Liang 22/03/2020
+    errors_list += us16_same_male_surname(repository1)
+    
     pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
     pt = PrettyTable(field_names=pt_labels)
 
