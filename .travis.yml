@@ -22,3 +22,6 @@ script:
  - python -m unittest us11_test
  - python -m unittest us15_test
  - python -m unittest us16_test
+ - python -m unittest us13_test
+ - python -m unittest us14_test
+

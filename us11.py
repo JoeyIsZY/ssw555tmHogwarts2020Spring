@@ -28,5 +28,6 @@ def us11_no_bigamy(repo1):
                                       (fam_1.repo['WIFE']['line'], fam_2.repo['WIFE']['line']),
                                       fam_1.repo['WIFE']['detail'],
                                       error_message))
+        i += 1
 
     return error
