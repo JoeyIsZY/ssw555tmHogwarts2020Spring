@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cdb12bf-d34d-42ab-a387-da6a04af7c82" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us11_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us11_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us16_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us16_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +199,7 @@
       <workItem from="1584580793621" duration="324000" />
       <workItem from="1584589053437" duration="945000" />
       <workItem from="1584922204903" duration="1147000" />
-      <workItem from="1586014351271" duration="17749000" />
+      <workItem from="1586014351271" duration="18319000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1581130988883</created>
@@ -328,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586040118367</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Sprint 3 update by yzhou">
+      <created>1586040419656</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1586040419656</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
