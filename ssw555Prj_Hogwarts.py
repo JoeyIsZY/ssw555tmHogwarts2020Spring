@@ -23,6 +23,8 @@ from us10 import us10_marriage_after_14
 from us11 import us11_no_bigamy
 from us15 import us15_more_than_15siblings
 from us16 import us16_same_male_surname
+from us13 import us13_sibling_spacing
+from us14 import us14_multiple_births
 from us23 import us23_unique_name_birth_date
 from us24 import us24_unique_families_by_spouses
 '''
@@ -239,9 +241,13 @@ def errors_print(repository1):
     errors_list += us15_more_than_15siblings(repository1)
     # us16 in Sprint2 by Fangji Liang 22/03/2020
     errors_list += us16_same_male_surname(repository1)
-    # us23 in Sprint2 by Ying Hu 3/30/2020
+    # us13 in Sprint3 by Yu Zhou 4/4/2020
+    errors_list += us13_sibling_spacing(repository1)
+    # us24 in Sprint3 by Yu Zhou 4/4/2020
+    errors_list += us14_multiple_births(repository1)
+    # us23 in Sprint3 by Ying Hu 3/30/2020
     errors_list += us23_unique_name_birth_date(repository1)
-    # us24 in Sprint2 by Ying Hu 3/30/2020
+    # us24 in Sprint3 by Ying Hu 3/30/2020
     errors_list += us24_unique_families_by_spouses(repository1)
     
     pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
