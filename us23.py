@@ -9,6 +9,7 @@ Author: Ying Hu
 
 def us23_unique_name_birth_date(repo1):
     error = []
+    # to avoid repeated error msg, change the way of ergodic method
     indi_list = list(repo1.individuals.values())
     i = 1
     for indi1 in indi_list:

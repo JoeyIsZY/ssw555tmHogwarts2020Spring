@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a505fdfa-d64b-4060-a4ec-2b92a52e68d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ssw555tmHogwarts2020Spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ssw555tmHogwarts2020Spring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555prj_Hogwarts_testfile.ged" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us16_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us16_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~$TeamHogwartsReport.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/us23.py" beforeDir="false" afterPath="$PROJECT_DIR$/us23.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us23_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us23_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/us24.py" beforeDir="false" afterPath="$PROJECT_DIR$/us24.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us24_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/us24_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +68,14 @@
       <option name="presentableId" value="Default" />
       <updated>1586045331303</updated>
     </task>
+    <task id="LOCAL-00001" summary="update us_16_test&#10;add us23, us23_test, us24, us24_test">
+      <created>1586050448631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586050448631</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update us_16_test&#10;add us23, us23_test, us24, us24_test" />
+    <option name="LAST_COMMIT_MESSAGE" value="update us_16_test&#10;add us23, us23_test, us24, us24_test" />
   </component>
 </project>
