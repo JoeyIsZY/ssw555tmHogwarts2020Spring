@@ -26,3 +26,5 @@ script:
  - python -m unittest us14_test
  - python -m unittest us23_test
  - python -m unittest us24_test
+ - python -m unittest us21_test
+ - python -m unittest us25_test
