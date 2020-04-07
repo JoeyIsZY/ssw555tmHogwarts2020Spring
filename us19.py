@@ -1,6 +1,5 @@
 '''us019 
 Fangji Liang 4/06/2020'''
-import re
 from us19_us20_refactory import id_find_parent_famc
 
 def us19_first_cousin_not_marry(repos):
