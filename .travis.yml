@@ -30,3 +30,5 @@ script:
  - python -m unittest us25_test
  - python -m unittest us19_test
  - python -m unittest us20_test
+ - python -m unittest us35_test
+ - python -m unittest us36_test
