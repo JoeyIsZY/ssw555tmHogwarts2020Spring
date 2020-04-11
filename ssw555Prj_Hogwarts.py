@@ -31,11 +31,15 @@ from us19 import us19_first_cousin_not_marry
 from us20 import us20_a_u_marry_n_n
 from us21 import us21_correct_gender_for_role
 from us25 import us25_unique_first_names_in_families
+from us35 import us35_list_recent_births
+from us36 import us36_list_recent_deaths
+
 '''
 change_date_2020_2_11: change origin code from yz, Fangji Liang
 change_date_2020_2_17: 1.use fp.close() 2.reset dateitem's value 3.default: self.alive = True 4. add us01 5.add us07, Haodong Wu
 change_date_2020_2_18: all date will store by datetime type in repository(Individual, Family), Fangji Liang
 changd_date_2020_2_18: add new function errors_print to collect and print all errors, Haodong Wu
+changd_date_2020_4_10: add new function special_print to collect and print individuals and groups with characteristics, Haodong Wu
 '''
 
 
@@ -271,6 +275,26 @@ def errors_print(repository1):
 
     print(pt)
 
+def special_print(repository1):
+    """This function is used to collect and print all special groups and special individuals.
+        Please make sure your us function return a tuple with two elements.
+        The format of the tuple should be (the characteristic, the list of ids)
+        Written by Haodong Wu      04/10/2020"""
+    special_list = []
+    special_list.append(us35_list_recent_births(repository1))
+    # us35 in Sprint4 by Haodong Wu 10/04/2020
+    special_list.append(us36_list_recent_deaths(repository1))
+    # us36 in Sprint4 by Haodong Wu 10/04/2020
+    
+    pt_labels = ['Index','Characteristics', 'IDs of individuals or groups with this characteristic']
+    pt = PrettyTable(field_names=pt_labels)
+    for index, (Characteristics, ids) in enumerate(special_list,start=1):
+        pt.add_row((index, Characteristics,ids))
+
+    print("\nIndividuals or groups with special characteristics")
+    print(pt)
+   
+    
 
 def main():
     path = os.getcwd()
@@ -282,7 +306,7 @@ def main():
     test.table_individual()
     test.table_family()
     errors_print(test)
-
+    special_print(test)
 
 if __name__ == '__main__':
     main()
