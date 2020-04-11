@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a505fdfa-d64b-4060-a4ec-2b92a52e68d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/Sprint4_test_result" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/us29.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/us29_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/us30.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/us30_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586222492754</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add US29, US29_TEST, US30, US30_TEST&#10;Add pretty table names">
+      <created>1586648146075</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586648146075</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add US29_TEST, US30_TEST to travis command">
+      <created>1586648205928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586648205928</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +143,8 @@
     <MESSAGE value="update team report&#10;add comments for us23 and us 24" />
     <MESSAGE value="update team report" />
     <MESSAGE value="add sprint3_test_result" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sprint3_test_result" />
+    <MESSAGE value="Add US29, US29_TEST, US30, US30_TEST&#10;Add pretty table names" />
+    <MESSAGE value="Add US29_TEST, US30_TEST to travis command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add US29_TEST, US30_TEST to travis command" />
   </component>
 </project>
