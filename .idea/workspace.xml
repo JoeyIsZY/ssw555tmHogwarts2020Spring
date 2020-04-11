@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a505fdfa-d64b-4060-a4ec-2b92a52e68d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Sprint4_test_result" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us29.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us29_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us30.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us30_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TeamHogwartsReport.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ssw555Prj_Hogwarts.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Python Unit Test" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586213886506</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update team report">
+      <created>1586222312292</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586222312292</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add sprint3_test_result">
+      <created>1586222492754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586222492754</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +133,7 @@
     <MESSAGE value="update us_16_test&#10;add us23, us23_test, us24, us24_test" />
     <MESSAGE value="update team report&#10;add comments for us23 and us 24" />
     <MESSAGE value="update team report" />
-    <option name="LAST_COMMIT_MESSAGE" value="update team report" />
+    <MESSAGE value="add sprint3_test_result" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sprint3_test_result" />
   </component>
 </project>
