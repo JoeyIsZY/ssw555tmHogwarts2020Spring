@@ -35,6 +35,8 @@ from us35 import us35_list_recent_births
 from us36 import us36_list_recent_deaths
 from us29 import us29_list_deceased
 from us30 import us30_list_living_married
+from us31 import us31_list_living_single
+from us32 import us32_list_mutiple_births
 '''
 change_date_2020_2_11: change origin code from yz, Fangji Liang
 change_date_2020_2_17: 1.use fp.close() 2.reset dateitem's value 3.default: self.alive = True 4. add us01 5.add us07, Haodong Wu
@@ -294,6 +296,12 @@ def special_print(repository1):
     # us29 in Sprint4 by Ying Hu 11/04/2020
     special_list.append(us30_list_living_married(repository1))
     # us30 in Sprint4 by Ying Hu 11/04/2020
+    special_list.append(us31_list_living_single(repository1))
+    # us31 in Sprint4 by Yu Zhou 18/04/2020
+    special_list.append(us32_list_mutiple_births(repository1))
+    # us32 in Sprint4 by Yu Zhou 18/04/2020
+
+
     pt_labels = ['Index','Characteristics', 'IDs of individuals or groups with this characteristic']
     pt = PrettyTable(field_names=pt_labels)
     for index, (Characteristics, ids) in enumerate(special_list,start=1):
