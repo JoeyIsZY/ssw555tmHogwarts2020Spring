@@ -15,6 +15,9 @@ change_date_2020_2_17: 1.use fp.close() 2.reset dateitem's value 3.default: self
 change_date_2020_2_18: all date will store by datetime type in repository(Individual, Family), Fangji Liang
 changd_date_2020_2_18: add new function errors_print to collect and print all errors, Haodong Wu
 changd_date_2020_4_10: add new function special_print to collect and print individuals and groups with characteristics, Haodong Wu
+changd_date_2020_4_19: change the Individual.is_alive, Individual.get_age, main(), repository.__init__(), change the interface to 
+                       access repo of Individual and Family,now repo can access by Individual[key] or Family[key], move error print 
+                       and special print into seperate fiel. upate Repository.update_individuals() and get_file_reader(), Fangji Liang
 '''
 
 
