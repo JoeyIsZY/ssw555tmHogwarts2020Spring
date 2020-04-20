@@ -27,10 +27,8 @@ def pretty_special(repo):
     special_list.append(us32_list_mutiple_births(repo))
     # us32 in Sprint4 by Yu Zhou 18/04/2020
     special_list.append(("orphan children", list(us33_list_orphans(repo))))
-    print(list(us33_list_orphans(repo)))
     # us33 in Sprint4 by Fangji Liang 19/04/2020
     special_list.append(("Spouses whose age difference is more than twice", list(us34_large_age_couple(repo))))
-    print(list(us34_large_age_couple(repo)))
     # us34 in Sprint4 by Fangji Liang 19/04/2020
 
     pt_labels = ['Index','Characteristics', 'IDs of individuals or groups with this characteristic']
