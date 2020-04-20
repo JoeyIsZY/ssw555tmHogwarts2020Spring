@@ -3,16 +3,16 @@ Author: yzhou
 """
 
 
-def us14_multiple_births(repo1):
+def us14_multiple_births(repo):
     """No more than five siblings should be born at the same time."""
     error = []
 
-    for fam in repo1.families.values():
-        children = fam.repo['CHIL']['detail']
+    for fam in repo.families.values():
+        children = fam['CHIL']['detail']
         if children != 'NA' and len(children) > 5:
             date = {}
             for child in list(children):
-                child_birth = repo1.individuals[child].repo['BIRT']['detail']
+                child_birth = repo.individuals[child]['BIRT']['detail']
                 if child_birth not in date.keys() and not date:
                     date[child_birth] = 1
                 elif child_birth in date.keys():

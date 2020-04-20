@@ -6,9 +6,9 @@ Author: Ying Hu
 """
 
 
-def us29_list_deceased(repo1):
+def us29_list_deceased(repo):
     lists = []
-    for indi in repo1.individuals.values():
-        if indi.repo['DEAT']['detail'] != 'NA':
+    for indi in repo.individuals.values():
+        if indi['DEAT']['detail'] != 'NA':
             lists.append(indi.indi_id)
     return "People who were deceased", lists

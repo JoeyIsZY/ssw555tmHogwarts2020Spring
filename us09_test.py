@@ -2,7 +2,6 @@
 Fangji Liang 2/28/2020'''
 
 
-import os
 import unittest
 from ssw555Prj_Hogwarts import Repository
 from us09 import us09_birth_after_death
@@ -10,11 +9,7 @@ from us09 import us09_birth_after_death
 
 class US09_TestCase(unittest.TestCase):
     def test_us08(self):
-        path = os.getcwd()
         test = Repository()
-        test.get_file_reader(path)
-        test.update_individuals()
-        test.update_families()
         self.assertEqual(sorted(us09_birth_after_death(test)),
                          [('ANOMALY', 'FAMILY', 'US09', (357, 375), '@F_L_US09_2@', "Father's death date 1994-04-04 occurs more than 9 month before child @I_L_US09_6@ birth 1995-07-16."),
                           ('ANOMALY', 'FAMILY', 'US09', (522, 540), '@F_H_US12_1@', "Father's death date 1700-11-10 occurs more than 9 month before child @I_H_US12_3@ birth 1711-10-11."),

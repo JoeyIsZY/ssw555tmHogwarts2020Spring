@@ -6,8 +6,8 @@ def us19_first_cousin_not_marry(repos):
     '''First cousins should not marry'''
     err = []
     for fam in repos.families.values():
-        husb = fam.repo['HUSB']['detail']
-        wife = fam.repo['WIFE']['detail']
+        husb = fam['HUSB']['detail']
+        wife = fam['WIFE']['detail']
         if  husb != 'NA' and wife != 'NA':
             husb_grand_fam = id_find_parent_famc(repos, husb)
             wife_grand_fam = id_find_parent_famc(repos, wife)

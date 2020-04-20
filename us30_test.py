@@ -2,18 +2,13 @@
     Written by Ying Hu   11/04/2020
 """
 import unittest
-import os
 from us30 import us30_list_living_married
 from ssw555Prj_Hogwarts import Repository
 
 
 class Test_us30(unittest.TestCase):
     def test_list_living_married(self):
-        path = os.getcwd()
         test = Repository()
-        test.get_file_reader(path)
-        test.update_individuals()
-        test.update_families()
         self.assertEqual(us30_list_living_married(test), ('People who are living and married', ['@I1@', '@I2@', '@I3@', '@I4@',
                                                           '@I6@', '@I_W_US01_2@', '@I_H_US03_1@', '@I_Z_US05_1@',
                                                           '@I_Z_US05_4@', '@I_L_US09_2@', '@I_L_US09_3@',
