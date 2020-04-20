@@ -82,7 +82,7 @@ def pretty_error(repo):
     
     pt_labels = ['Index', 'ERROR/ANOMALY', 'Data Type', 'User Story Number', 'Line', 'Error ID', 'Error Message']
     pt = PrettyTable(field_names=pt_labels)
-    pt.padding_width = 1
+
     for index, (error_type, data_type, userstory_number, line, error_id, error_message) in enumerate(errors_list,
                                                                                                      start=1):
         pt.add_row((index, error_type, data_type, userstory_number, line, error_id, error_message))
